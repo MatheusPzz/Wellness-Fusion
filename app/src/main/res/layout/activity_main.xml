@@ -1,0 +1,157 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wellness Fusion"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
+</LinearLayout>
+
+    <!-- Navigation Bar Buttons -->
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"/>
+        <Button
+            android:id="@+id/favoritesButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Saved Workouts"/>
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile"/>
+    </LinearLayout>
+
+    <!-- Workout Builder Title -->
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout Builder"
+        android:textSize="40sp"
+        android:textStyle="italic"/>
+
+    <!-- Physical and Zen Buttons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+        <Button
+            android:id="@+id/physicalButton"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:text="Physical"/>
+        <Button
+            android:id="@+id/zenButton"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:text="Zen"/>
+    </GridLayout>
+
+    <!-- Mood Selection -->
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        android:textSize="30sp"/>
+    <!-- Custom component for mood selection here -->
+
+<HorizontalScrollView
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/moodContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/ic_launcher_background"
+        android:padding="10dp">
+
+
+
+         <ToggleButton
+             android:background="@drawable/smile_selected"
+             android:textOn=""
+             android:textOff=""
+             android:id="@+id/toggleHappy"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_gravity="center"/>
+        <ToggleButton
+            android:background="@drawable/smile_selected"
+            android:textOn=""
+            android:textOff=""
+            android:id="@+id/toggleSad"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"/>
+        <ToggleButton
+            android:background="@drawable/smile_selected"
+            android:textOn=""
+            android:textOff=""
+            android:id="@+id/toggleHeavy"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"/>
+        <ToggleButton
+            android:background="@drawable/smile_selected"
+            android:textOn=""
+            android:textOff=""
+            android:id="@+id/toggleEnergetic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"/>
+        <ToggleButton
+            android:background="@drawable/smile_selected"
+            android:textOn=""
+            android:textOff=""
+            android:id="@+id/toggleZen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</HorizontalScrollView>
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+</LinearLayout>
