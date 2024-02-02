@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Wellness Fusion</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="play_workout">Play</string>
+    <string name="bench_press">Bench Press</string>
+    <string name="ex2">ex2</string>
+    <string name="ex3">ex3</string>
+    <string name="chest_biceps_triceps_plan">Chest, Biceps, Triceps plan</string>
+    <string name="back">back_arrow</string>
 </resources>

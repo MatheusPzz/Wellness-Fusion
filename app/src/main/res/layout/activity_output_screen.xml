@@ -1,0 +1,30 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp">
+
+<!-- Header area -->
+<!-- Add your back arrow, title, and other header views here -->
+
+<!-- Title for the workout plan -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Generated Workout Plan"
+    android:gravity="center"
+    android:textSize="24sp"
+    android:layout_marginBottom="16dp" />
+
+<!-- RecyclerView for the list of exercises -->
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/exercisesRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+<!-- Add other views such as a bottom navigation or buttons here -->
+
+</LinearLayout>

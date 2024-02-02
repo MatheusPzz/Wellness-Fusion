@@ -1,6 +1,258 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="20dp">-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--    &lt;!&ndash; Title for the overlay &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Select the categories you want to include in your workout:"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:textStyle="bold"/>-->
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:layout_gravity="center">-->
+<!--    &lt;!&ndash; GridLayout for the mix and match items &ndash;&gt;-->
+<!--    <GridLayout-->
+<!--        android:id="@+id/gridLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="450dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:columnCount="2"-->
+<!--        android:rowCount="3"-->
+<!--        android:alignmentMode="alignMargins"-->
+<!--        android:columnOrderPreserved="false">-->
+
+
+<!--        &lt;!&ndash; Dynamically add ImageButtons or ToggleButtons here &ndash;&gt;-->
+
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:background="@drawable/smile_background"-->
+<!--            android:contentDescription="Smile Icon"-->
+<!--            android:scaleType="fitXY" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:background="@drawable/smile_background"-->
+<!--            android:contentDescription="Smile Icon"-->
+<!--            android:scaleType="fitXY" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:background="@drawable/smile_background"-->
+<!--            android:contentDescription="Smile Icon"-->
+<!--            android:scaleType="fitXY" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:background="@drawable/smile_background"-->
+<!--            android:contentDescription="Smile Icon"-->
+<!--            android:scaleType="fitXY" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:background="@drawable/smile_background"-->
+<!--            android:contentDescription="Smile Icon"-->
+<!--            android:scaleType="fitXY" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:background="@drawable/smile_background"-->
+<!--            android:contentDescription="Smile Icon"-->
+<!--            android:scaleType="fitXY" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:background="@drawable/smile_background"-->
+<!--            android:contentDescription="Smile Icon"-->
+<!--            android:scaleType="fitXY" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:background="@drawable/smile_background"-->
+<!--            android:contentDescription="Smile Icon"-->
+<!--            android:scaleType="fitXY" />-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:background="@drawable/smile_background"-->
+<!--            android:contentDescription="Smile Icon"-->
+<!--            android:scaleType="fitXY" />-->
+
+
+
+
+
+
+
+
+
+
+<!--    </GridLayout>-->
+<!--</LinearLayout>-->
+<!--    </ScrollView>-->
+
+<!--    &lt;!&ndash; Button to confirm selection &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/buttonSelect"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Select"-->
+<!--        android:layout_marginTop="16dp"/>-->
+<!--</LinearLayout>-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Title for the overlay -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the categories you want to include in your workout:"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <!-- ScrollView to enable vertical scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"> <!-- Use weight to allocate remaining space for scrolling -->
+
+        <!-- GridLayout for the mix and match items -->
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/smile_background"
+                android:contentDescription="Smile Icon"
+                android:scaleType="fitXY" />
+            <ImageButton
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/smile_background"
+                android:contentDescription="Smile Icon"
+                android:scaleType="fitXY" />
+            <ImageButton
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/smile_background"
+                android:contentDescription="Smile Icon"
+                android:scaleType="fitXY" />
+            <ImageButton
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/smile_background"
+                android:contentDescription="Smile Icon"
+                android:scaleType="fitXY" />
+            <ImageButton
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/smile_background"
+                android:contentDescription="Smile Icon"
+                android:scaleType="fitXY" />
+            <ImageButton
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/smile_background"
+                android:contentDescription="Smile Icon"
+                android:scaleType="fitXY" />
+            <ImageButton
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/smile_background"
+                android:contentDescription="Smile Icon"
+                android:scaleType="fitXY" />
+            <ImageButton
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/smile_background"
+                android:contentDescription="Smile Icon"
+                android:scaleType="fitXY" />
+            <ImageButton
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/smile_background"
+                android:contentDescription="Smile Icon"
+                android:scaleType="fitXY" />
+            <ImageButton
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/smile_background"
+                android:contentDescription="Smile Icon"
+                android:scaleType="fitXY" />
+
+
+        </GridLayout>
+    </ScrollView>
+
+    <!-- Button to confirm selection -->
+    <Button
+        android:id="@+id/buttonSelectZen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
